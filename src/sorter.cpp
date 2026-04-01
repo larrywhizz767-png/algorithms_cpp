@@ -28,17 +28,29 @@ void Sorter::bubbleSortAscending(IntList& list) const
 
     while (didSwap == true) {
         didSwap = false;
-            for (int i = 0; i < n - 1; i++) {
+        for (int i = 0; i < n - 1; i++) {
 
-                int a = list.get(i);
-                int b = list.get(i + 1);
+            int a = list.get(i);
+            int b = list.get(i + 1);
 
-                if (a > b) {
-                    list.set(i, b);
-                    list.set(i + 1, a);
-                    didSwap = true;
-                }
+            if (a > b) {
+                list.set(i, b);
+                list.set(i + 1, a);
+                didSwap = true;
             }
         }
     }
+}
+
+void Sorter::insertionSortAscending(IntList& list) const
+{
+    for (int i = 1; i < list.size(); i++) {
+        int valueToInsert = list.get(i);
+        int scanIndex = i;
+        while (scanIndex >= 0 && scanIndex > valueToInsert)
+            int temp = list.get(scanIndex+1);
+            list.set(temp, list.get(scanIndex));
+            list.set(scanIndex, temp);
+            } 
+        }
 

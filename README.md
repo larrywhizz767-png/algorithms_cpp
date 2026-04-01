@@ -62,4 +62,4 @@ sorter.insertionSortAscending(values);
 - add `mergeSortAscending` and `quickSortAscending`
 - expand the repo with searching algorithms such as linear search and binary search
 - add graph algorithms such as Dijkstra
-- attach example inputs and outputs for each algorithm
+- attach example inputs and outputs for each algorithm  
