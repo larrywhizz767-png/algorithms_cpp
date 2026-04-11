@@ -41,16 +41,16 @@ void Sorter::bubbleSortAscending(IntList& list) const
         }
     }
 }
-
 void Sorter::insertionSortAscending(IntList& list) const
 {
     for (int i = 1; i < list.size(); i++) {
         int valueToInsert = list.get(i);
-        int scanIndex = i;
-        while (scanIndex >= 0 && scanIndex > valueToInsert)
-            int temp = list.get(scanIndex+1);
-            list.set(temp, list.get(scanIndex));
-            list.set(scanIndex, temp);
-            } 
+        int scanIndex = i - 1;
+
+        while (scanIndex >= 0 && list.get(scanIndex) > valueToInsert) {
+            list.set(scanIndex + 1, list.get(scanIndex)); 
+            scanIndex--;
         }
 
+        list.set(scanIndex + 1, valueToInsert); 
+    }
