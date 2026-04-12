@@ -41,6 +41,7 @@ void Sorter::bubbleSortAscending(IntList& list) const
         }
     }
 }
+
 void Sorter::insertionSortAscending(IntList& list) const
 {
     for (int i = 1; i < list.size(); i++) {
@@ -54,4 +55,39 @@ void Sorter::insertionSortAscending(IntList& list) const
 
         list.set(scanIndex + 1, valueToInsert); 
     }
+}
+
+void Sorter::cocktailSortAscending(IntList& list) const
+{
+    int n = list.size();
+    bool didSwap = true;
+
+    while (didSwap == true) {
+        didSwap = false;
+        for (int i = 0; i < n - 1; i++) {
+
+            int a = list.get(i);
+            int b = list.get(i + 1);
+
+            if (a > b) {
+                list.set(i, b);
+                list.set(i + 1, a);
+                didSwap = true;
+            }
+        }
+
+        for (int i = list.size()-1; i >= 1; i--) {
+
+            int a = list.get(i);
+            int b = list.get(i-1);
+
+            if (a < b) {
+                list.set(i, a);
+                list.set(i - 1, b);
+                didSwap = true;
+            }
+        }
+    }
+
+    
 }

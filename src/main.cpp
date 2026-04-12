@@ -26,4 +26,8 @@ int main() {
     sorter.insertionSortAscending(insertion);
     printList(insertion);
 
+    IntList cocktail({9, 4, 7, 1, 3});
+    sorter.cocktailSortAscending(cocktail);
+    printList(cocktail);
+
 }
