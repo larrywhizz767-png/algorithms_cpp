@@ -35,8 +35,7 @@ git clone git@github.com:larrywhizz767-png/algorithms_cpp.git
 The fastest way to try the project is to compile the small demo included in the repo:
 
 ```bash
-g++ -std=c++17 -I src src/IntList.cpp src/sorter.cpp examples/sorting_demo.cpp -o sorting-demo
-./sorting-demo
+g++ -std=c++17 -I src src/main.cpp src/IntList.cpp src/sorter.cpp -o main && ./main
 ```
 
 Expected output:

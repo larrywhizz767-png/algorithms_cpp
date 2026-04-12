@@ -54,3 +54,4 @@ void Sorter::insertionSortAscending(IntList& list) const
 
         list.set(scanIndex + 1, valueToInsert); 
     }
+}

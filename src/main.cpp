@@ -26,5 +26,4 @@ int main() {
     sorter.insertionSortAscending(insertion);
     printList(insertion);
 
-    return 0;
 }
