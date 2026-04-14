@@ -20,19 +20,40 @@ int main() {
     std::cout << "Selection sort result: " << "\n";
     printList(selection);
 
+    IntList selection(myList);
+    sorter.selectionSortDescending(selection);
+    std::cout << "Selection sort descending: " << "\n";
+    printList(selection);
+
     IntList bubble(myList);
     sorter.bubbleSortAscending(bubble);
-    std::cout << "Bubble sort result: " << "\n";
+    std::cout << "Bubble sort ascending: " << "\n";
+    printList(bubble);
+
+    IntList bubble(myList);
+    sorter.bubbleSortDescending(bubble);
+    std::cout << "Bubble sort descending: " << "\n";
     printList(bubble);
 
     IntList insertion(myList);
     sorter.insertionSortAscending(insertion);
-    std::cout << "Insertion sort result: " << "\n";
+    std::cout << "Insertion sort ascending: " << "\n";
+    printList(insertion);
+
+    IntList insertion(myList);
+    sorter.insertionSortDescending(insertion);
+    std::cout << "Insertion sort descending: " << "\n";
     printList(insertion);
 
     IntList cocktail(myList);
     sorter.cocktailSortAscending(cocktail);
-    std::cout << "Cocktail sort result: " << "\n";
+    std::cout << "Cocktail sort ascending: " << "\n";
     printList(cocktail);
+
+    IntList cocktail(myList);
+    sorter.cocktailSortDescending(cocktail);
+    std::cout << "Cocktail sort descending: " << "\n";
+    printList(cocktail);
+
 
 }
