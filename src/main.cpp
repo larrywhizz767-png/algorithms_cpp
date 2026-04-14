@@ -15,45 +15,45 @@ int main() {
     Sorter sorter;
     std::vector<int> myList = {6, 1, 5, 2, 4, 3};
 
-    IntList selection(myList);
-    sorter.selectionSortAscending(selection);
+    IntList selection_asc(myList);
+    sorter.selectionSortAscending(selection_asc);
     std::cout << "Selection sort result: " << "\n";
-    printList(selection);
+    printList(selection_asc);
 
-    IntList selection(myList);
-    sorter.selectionSortDescending(selection);
+    IntList selection_desc(myList);
+    sorter.selectionSortDescending(selection_desc);
     std::cout << "Selection sort descending: " << "\n";
-    printList(selection);
+    printList(selection_desc);
 
-    IntList bubble(myList);
-    sorter.bubbleSortAscending(bubble);
+    IntList bubble_asc(myList);
+    sorter.bubbleSortAscending(bubble_asc);
     std::cout << "Bubble sort ascending: " << "\n";
-    printList(bubble);
+    printList(bubble_asc);
 
-    IntList bubble(myList);
-    sorter.bubbleSortDescending(bubble);
+    IntList bubble_desc(myList);
+    sorter.bubbleSortDescending(bubble_desc);
     std::cout << "Bubble sort descending: " << "\n";
-    printList(bubble);
+    printList(bubble_desc);
 
-    IntList insertion(myList);
-    sorter.insertionSortAscending(insertion);
+    IntList insertion_asc(myList);
+    sorter.insertionSortAscending(insertion_asc);
     std::cout << "Insertion sort ascending: " << "\n";
-    printList(insertion);
+    printList(insertion_asc);
 
-    IntList insertion(myList);
-    sorter.insertionSortDescending(insertion);
+    IntList insertion_desc(myList);
+    sorter.insertionSortDescending(insertion_desc);
     std::cout << "Insertion sort descending: " << "\n";
-    printList(insertion);
+    printList(insertion_desc);
 
-    IntList cocktail(myList);
-    sorter.cocktailSortAscending(cocktail);
+    IntList cocktail_asc(myList);
+    sorter.cocktailSortAscending(cocktail_asc);
     std::cout << "Cocktail sort ascending: " << "\n";
-    printList(cocktail);
+    printList(cocktail_asc);
 
-    IntList cocktail(myList);
-    sorter.cocktailSortDescending(cocktail);
+    IntList cocktail_desc(myList);
+    sorter.cocktailSortDescending(cocktail_desc);
     std::cout << "Cocktail sort descending: " << "\n";
-    printList(cocktail);
+    printList(cocktail_desc);
 
 
 }

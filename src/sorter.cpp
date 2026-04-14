@@ -149,7 +149,7 @@ void Sorter::cocktailSortAscending(IntList& list) const
     
 }
 
-void Sorter::cocktailSortAscending(IntList& list) const
+void Sorter::cocktailSortDescending(IntList& list) const
 {
     int n = list.size();
     bool didSwap = true;
